@@ -19,7 +19,7 @@ int main(){
 	
 	do{
 		c=getc(m);
-		if(c!='\n'){
+		if(c!='\n' && c!= ' '){
 			matriz[i][j]=c;
 			j++;
 			if(j==NCOL){
@@ -34,6 +34,7 @@ int main(){
 	for(a=0; a<NLIN; a++){
 		for(b=0; b<NCOL;b++){
 			printf("%c", matriz[a][b]);
+			printf(" ");
 		}
 		printf("\n");
 	}
